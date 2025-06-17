@@ -1,0 +1,42 @@
+---
+title: "Introducción al curso"
+format: html
+---
+
+## Bienvenidos
+
+Este sitio web acompaña el desarrollo del programa de formación en análisis de impacto, con recursos, contenidos prácticos y ejemplos interactivos construidos en R.
+
+A lo largo del curso, abordaremos herramientas fundamentales para transformar datos en información útil para la toma de decisiones. La formación está orientada a fortalecer capacidades en cada etapa del proceso analítico, desde la recolección de datos hasta la interpretación de resultados.
+
+## Docente a cargo
+
+El docente a cargo del curso será el profesor Gabriel Michelena (MESi-IIEP-UBA). Email: pmiguelena\@gmail.com
+
+## Objetivos del programa
+
+Los objetivos específicos de esta capacitación son:
+
+1.  **Capacitar en el proceso de recolección y procesamiento de datos**, incluyendo su organización, limpieza y validación.
+2.  **Capacitar en la elaboración de indicadores y estadísticas descriptivas** que permitan formalizar los impactos en términos de **costos y beneficios**.
+3.  **Brindar formación en el uso de herramientas estadísticas y computacionales** para el análisis de impacto, con énfasis en aplicaciones prácticas mediante el lenguaje R.
+
+Acompañanos en este recorrido para dominar las herramientas esenciales que permiten convertir evidencia en acción.
+
+## Programa
+
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clase    | Contenido                                                                                                                                                                                                                              |
++==========+========================================================================================================================================================================================================================================+
+| 1\       | Clase Introductoria R Paquete de software estadístico utilizado principalmente por instituciones académicas y de investigación. Introducción al entorno de trabajo R, gestión de bases de datos, creación y modificación de variables. |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2        | El paquete Tydiverse y ggplot. Elaboración de tablas y gráficos. Importación y exportación de datos.                                                                                                                                   |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 3        | Desarrollo de operaciones complejas, loops y regresiones.                                                                                                                                                                              |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 4        | Matriz insumo producto como herramienta de análisis económico. El modelo abierto Leontief: fundamentos y limitaciones. Multiplicadores. Obtención de resultados relacionados con la producción y el empleo.                            |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 5        | Evaluación de políticas mediante el modelo Insumo Producto.                                                                                                                                                                            |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 6        | Trabajo final: simulación de un proyecto o programa.                                                                                                                                                                                   |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,170 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introducción al curso",
+    "section": "",
+    "text": "Este sitio web acompaña el desarrollo del programa de formación en análisis de impacto, con recursos, contenidos prácticos y ejemplos interactivos construidos en R.\nA lo largo del curso, abordaremos herramientas fundamentales para transformar datos en información útil para la toma de decisiones. La formación está orientada a fortalecer capacidades en cada etapa del proceso analítico, desde la recolección de datos hasta la interpretación de resultados."
+  },
+  {
+    "objectID": "index.html#bienvenidos",
+    "href": "index.html#bienvenidos",
+    "title": "Introducción al curso",
+    "section": "",
+    "text": "Este sitio web acompaña el desarrollo del programa de formación en análisis de impacto, con recursos, contenidos prácticos y ejemplos interactivos construidos en R.\nA lo largo del curso, abordaremos herramientas fundamentales para transformar datos en información útil para la toma de decisiones. La formación está orientada a fortalecer capacidades en cada etapa del proceso analítico, desde la recolección de datos hasta la interpretación de resultados."
+  },
+  {
+    "objectID": "index.html#docente-a-cargo",
+    "href": "index.html#docente-a-cargo",
+    "title": "Introducción al curso",
+    "section": "Docente a cargo",
+    "text": "Docente a cargo\nEl docente a cargo del curso será el profesor Gabriel Michelena (MESi-IIEP-UBA). Email: pmiguelena@gmail.com"
+  },
+  {
+    "objectID": "index.html#objetivos-del-programa",
+    "href": "index.html#objetivos-del-programa",
+    "title": "Introducción al curso",
+    "section": "Objetivos del programa",
+    "text": "Objetivos del programa\nLos objetivos específicos de esta capacitación son:\n\nCapacitar en el proceso de recolección y procesamiento de datos, incluyendo su organización, limpieza y validación.\nCapacitar en la elaboración de indicadores y estadísticas descriptivas que permitan formalizar los impactos en términos de costos y beneficios.\nBrindar formación en el uso de herramientas estadísticas y computacionales para el análisis de impacto, con énfasis en aplicaciones prácticas mediante el lenguaje R.\n\nAcompañanos en este recorrido para dominar las herramientas esenciales que permiten convertir evidencia en acción."
+  },
+  {
+    "objectID": "index.html#programa",
+    "href": "index.html#programa",
+    "title": "Introducción al curso",
+    "section": "Programa",
+    "text": "Programa\n\n\n\n\n\n\n\nClase\nContenido\n\n\n\n\n1\n\nClase Introductoria R Paquete de software estadístico utilizado principalmente por instituciones académicas y de investigación. Introducción al entorno de trabajo R, gestión de bases de datos, creación y modificación de variables.\n\n\n2\nEl paquete Tydiverse y ggplot. Elaboración de tablas y gráficos. Importación y exportación de datos.\n\n\n3\nDesarrollo de operaciones complejas, loops y regresiones.\n\n\n4\nMatriz insumo producto como herramienta de análisis económico. El modelo abierto Leontief: fundamentos y limitaciones. Multiplicadores. Obtención de resultados relacionados con la producción y el empleo.\n\n\n5\nEvaluación de políticas mediante el modelo Insumo Producto.\n\n\n6\nTrabajo final: simulación de un proyecto o programa."
+  },
+  {
+    "objectID": "clase_1.html",
+    "href": "clase_1.html",
+    "title": "CLASE 1",
+    "section": "",
+    "text": "R es un lenguaje de programación diseñado específicamente para el procesamiento, modelado y análisis estadístico de datos. Su principal fortaleza radica en su flexibilidad y en la gran variedad de herramientas estadísticas y gráficas que ofrece.\nUna de sus características distintivas es que se trata de software libre (https://www.r-project.org/), lo que significa que cualquier persona puede utilizarlo, modificarlo y distribuirlo sin costo. Su estructura se basa en una sintaxis básica conocida como R base, que permite realizar operaciones estadísticas simples y complejas con facilidad.\nAdemás, R se caracteriza por tener una sintaxis incremental, ya que su funcionalidad se puede ampliar mediante paquetes desarrollados por terceros. Esta extensibilidad ha permitido que se consolide como una de las principales plataformas de análisis en múltiples disciplinas.\nR también es reconocido por su capacidad para generar gráficos con calidad de publicación, lo que lo convierte en una herramienta ideal para informes técnicos, papers académicos y presentaciones profesionales.\nFinalmente, R cuenta con una amplia comunidad de usuarios y desarrolladores en todo el mundo. Esta comunidad activa contribuye continuamente al desarrollo de nuevos paquetes, documentación, foros de ayuda y recursos educativos que fortalecen y enriquecen el ecosistema del lenguaje.\n\n\n\nR presenta una serie de ventajas importantes frente a Stata, especialmente para quienes buscan una herramienta potente, flexible y accesible para el análisis de datos:\n\nEs gratuito: R es completamente libre y de código abierto. A diferencia de Stata, no requiere licencias de pago, lo que lo hace ideal tanto para instituciones públicas como para estudiantes y profesionales independientes.\nAlta potencia computacional: R permite realizar análisis estadísticos complejos, modelado avanzado y procesamiento masivo de datos, gracias a su arquitectura extensible y a la amplia variedad de paquetes disponibles.\nVelocidad: Con el uso adecuado de paquetes optimizados (como data.table o dplyr), R puede ser muy eficiente en el manejo de grandes volúmenes de datos.\nCompatibilidad con otros lenguajes: R se integra fácilmente con otros lenguajes como Python, C++, SQL y Julia, lo que permite construir flujos de trabajo más completos y personalizados.\nManejo de microdatos en memoria virtual: A diferencia de Stata, R permite trabajar con múltiples conjuntos de microdatos de forma simultánea sin necesidad de cargarlos físicamente al entorno, lo cual mejora la eficiencia y facilita comparaciones entre bases.\nAplicaciones avanzadas: R incluye herramientas para aprendizaje automático (machine learning), redes neuronales profundas (deep neural networks) y otras técnicas de inteligencia artificial, que amplían significativamente sus posibilidades de aplicación en áreas emergentes.\n\n\n\n\nRStudio es un entorno de desarrollo integrado (IDE) diseñado específicamente para utilizar el lenguaje R de manera más amigable y eficiente. Aunque R puede ejecutarse desde una consola básica, RStudio ofrece una interfaz visual intuitiva que facilita enormemente la escritura de código, la organización de proyectos y la visualización de resultados.\nEste entorno permite correr comandos, gestionar scripts, visualizar gráficos, explorar datasets y utilizar extensiones del lenguaje R, todo desde una misma plataforma. Incluye herramientas como autocompletado, resaltado de sintaxis, paneles para archivos y gráficos, y soporte para R Markdown, entre muchas otras funcionalidades.\nAdemás, RStudio es gratuito (https://www.posit.co/download/rstudio-desktop/) y de código abierto, y puede descargarse fácilmente desde su sitio web oficial.\nGracias a su facilidad de uso y potencia, RStudio se ha convertido en el entorno más utilizado por estudiantes, investigadores y profesionales que trabajan con análisis de datos en R.\n\n\n\nConsola del Rstudio"
+  },
+  {
+    "objectID": "clase_1.html#qué-es-r",
+    "href": "clase_1.html#qué-es-r",
+    "title": "CLASE 1",
+    "section": "",
+    "text": "R es un lenguaje de programación diseñado específicamente para el procesamiento, modelado y análisis estadístico de datos. Su principal fortaleza radica en su flexibilidad y en la gran variedad de herramientas estadísticas y gráficas que ofrece.\nUna de sus características distintivas es que se trata de software libre (https://www.r-project.org/), lo que significa que cualquier persona puede utilizarlo, modificarlo y distribuirlo sin costo. Su estructura se basa en una sintaxis básica conocida como R base, que permite realizar operaciones estadísticas simples y complejas con facilidad.\nAdemás, R se caracteriza por tener una sintaxis incremental, ya que su funcionalidad se puede ampliar mediante paquetes desarrollados por terceros. Esta extensibilidad ha permitido que se consolide como una de las principales plataformas de análisis en múltiples disciplinas.\nR también es reconocido por su capacidad para generar gráficos con calidad de publicación, lo que lo convierte en una herramienta ideal para informes técnicos, papers académicos y presentaciones profesionales.\nFinalmente, R cuenta con una amplia comunidad de usuarios y desarrolladores en todo el mundo. Esta comunidad activa contribuye continuamente al desarrollo de nuevos paquetes, documentación, foros de ayuda y recursos educativos que fortalecen y enriquecen el ecosistema del lenguaje."
+  },
+  {
+    "objectID": "clase_1.html#r-vs-sta",
+    "href": "clase_1.html#r-vs-sta",
+    "title": "CLASE 1",
+    "section": "",
+    "text": "R presenta una serie de ventajas importantes frente a Stata, especialmente para quienes buscan una herramienta potente, flexible y accesible para el análisis de datos:\n\nEs gratuito: R es completamente libre y de código abierto. A diferencia de Stata, no requiere licencias de pago, lo que lo hace ideal tanto para instituciones públicas como para estudiantes y profesionales independientes.\nAlta potencia computacional: R permite realizar análisis estadísticos complejos, modelado avanzado y procesamiento masivo de datos, gracias a su arquitectura extensible y a la amplia variedad de paquetes disponibles.\nVelocidad: Con el uso adecuado de paquetes optimizados (como data.table o dplyr), R puede ser muy eficiente en el manejo de grandes volúmenes de datos.\nCompatibilidad con otros lenguajes: R se integra fácilmente con otros lenguajes como Python, C++, SQL y Julia, lo que permite construir flujos de trabajo más completos y personalizados.\nManejo de microdatos en memoria virtual: A diferencia de Stata, R permite trabajar con múltiples conjuntos de microdatos de forma simultánea sin necesidad de cargarlos físicamente al entorno, lo cual mejora la eficiencia y facilita comparaciones entre bases.\nAplicaciones avanzadas: R incluye herramientas para aprendizaje automático (machine learning), redes neuronales profundas (deep neural networks) y otras técnicas de inteligencia artificial, que amplían significativamente sus posibilidades de aplicación en áreas emergentes."
+  },
+  {
+    "objectID": "clase_1.html#rstudio-el-entorno-de-trabajo-para-programar-en-r",
+    "href": "clase_1.html#rstudio-el-entorno-de-trabajo-para-programar-en-r",
+    "title": "CLASE 1",
+    "section": "",
+    "text": "RStudio es un entorno de desarrollo integrado (IDE) diseñado específicamente para utilizar el lenguaje R de manera más amigable y eficiente. Aunque R puede ejecutarse desde una consola básica, RStudio ofrece una interfaz visual intuitiva que facilita enormemente la escritura de código, la organización de proyectos y la visualización de resultados.\nEste entorno permite correr comandos, gestionar scripts, visualizar gráficos, explorar datasets y utilizar extensiones del lenguaje R, todo desde una misma plataforma. Incluye herramientas como autocompletado, resaltado de sintaxis, paneles para archivos y gráficos, y soporte para R Markdown, entre muchas otras funcionalidades.\nAdemás, RStudio es gratuito (https://www.posit.co/download/rstudio-desktop/) y de código abierto, y puede descargarse fácilmente desde su sitio web oficial.\nGracias a su facilidad de uso y potencia, RStudio se ha convertido en el entorno más utilizado por estudiantes, investigadores y profesionales que trabajan con análisis de datos en R.\n\n\n\nConsola del Rstudio"
+  },
+  {
+    "objectID": "clase_1.html#primeros-pasos-en-rstudio-crear-un-archivo-y-cargar-librerías",
+    "href": "clase_1.html#primeros-pasos-en-rstudio-crear-un-archivo-y-cargar-librerías",
+    "title": "CLASE 1",
+    "section": "Primeros pasos en RStudio: crear un archivo y cargar librerías",
+    "text": "Primeros pasos en RStudio: crear un archivo y cargar librerías\nCuando abrimos RStudio por primera vez, el primer paso para comenzar a trabajar es crear un nuevo archivo de script en R, donde escribiremos nuestras líneas de código.\nPara hacerlo:\n\nHacé clic en File &gt; New File &gt; R Script, o bien usá el atajo Ctrl + Shift + N (Windows) / Cmd + Shift + N (Mac).\nSe abrirá una pestaña nueva donde podés comenzar a escribir comandos, guardarlos y ejecutarlos en cualquier momento.\nEn R, muchas funcionalidades avanzadas no están incluidas en la versión base, pero pueden añadirse a través de librerías (también llamadas paquetes). Estas librerías amplían las capacidades del lenguaje, permitiendo por ejemplo hacer gráficos avanzados, manipular datos, o aplicar técnicas de machine learning.\n\nPara utilizar una librería en R, hay dos pasos:\nInstalarla (una sola vez):\noptions(repos = c(CRAN = “https://cloud.r-project.org”))))\ninstall.packages(“dplyr”)\nCargarla (cada vez que abrís R):"
+  },
+  {
+    "objectID": "clase_1.html#definición-de-objetos-en-r",
+    "href": "clase_1.html#definición-de-objetos-en-r",
+    "title": "CLASE 1",
+    "section": "Definición de objetos en R",
+    "text": "Definición de objetos en R\nEn R, los objetos son la unidad fundamental de trabajo. Todo lo que manipulamos, analizamos o visualizamos en R se representa como un objeto. Estos pueden adoptar distintas formas: desde un número individual, un vector numérico o de caracteres, hasta una función, una base de datos o incluso un gráfico.\nA medida que se crean, los objetos se almacenan en la memoria de trabajo, y pueden visualizarse en el panel superior derecho de RStudio, donde se muestra el entorno activo.\nPara definir un objeto en R, se utiliza el operador de asignación &lt;-. Este operador permite asignar un valor o conjunto de valores a un nombre. La sintaxis es:\n\nnombre_objeto &lt;- \"definición_del_objeto\"\n\nPor ejemplo:\n\nx &lt;- 5\nmi_vector &lt;- c(1, 2, 3)\n\nEn estos ejemplos, el objeto x contiene el número 5, mientras que mi_vector es un vector numérico con tres elementos.\n\n\n\nEjemplo"
+  },
+  {
+    "objectID": "clase_1.html#vectores-en-r",
+    "href": "clase_1.html#vectores-en-r",
+    "title": "CLASE 1",
+    "section": "Vectores en R",
+    "text": "Vectores en R\nLa mayoría de las operaciones aritméticas (+, -, *, /) y funciones en R están definidas con carácter vectorial.\n¿Y qué significa esto? Que R opera componente a componente cuando trabaja con vectores.\n\n\n¿Cómo se define un vector?\nEn R, los vectores se crean con la función c() (que viene de concatenate, concatenar). Es la estructura más simple y común del lenguaje.\n\n# Un vector de números\nedades &lt;- c(23, 35, 42, 19)\n\n# Un vector de texto\nnombres &lt;- c(\"Ana\", \"Luis\", \"Pedro\")\n\n# Un vector lógico\nrespuestas &lt;- c(TRUE, FALSE, TRUE)\n\n\na &lt;- c(1, 2, 3)\nb &lt;- c(10, 20, 30)\n\na + b  # Suma componente a componente\n\n[1] 11 22 33\n\n\nA continuación se muestran ejemplos básicos de cómo crear objetos y vectores en R.\n\n# Primer comando: creo un objeto numérico\nx &lt;- 1\nx  # Resultado: 1\n\n[1] 1\n\n# Reasigno el objeto con un valor tipo texto (character)\nx &lt;- \"hola\"\nx  # Resultado: \"hola\"\n\n[1] \"hola\"\n\n# Creo un vector numérico con varios valores\nx &lt;- c(10.4, 5.6, 3.1, 6.4, 21.7)\nx  # Resultado: 10.4  5.6  3.1  6.4  21.7\n\n[1] 10.4  5.6  3.1  6.4 21.7\n\n# Creo un vector de texto (caracteres)\nx &lt;- c(\"a\", \"b\", \"c\")\nx  # Resultado: \"a\" \"b\" \"c\"\n\n[1] \"a\" \"b\" \"c\""
+  },
+  {
+    "objectID": "clase_1.html#tipos-o-clases-de-datos-en-r",
+    "href": "clase_1.html#tipos-o-clases-de-datos-en-r",
+    "title": "CLASE 1",
+    "section": "Tipos o clases de datos en R",
+    "text": "Tipos o clases de datos en R\nLos principales tipos de datos atómicos que podés encontrar en R son:\n\ncharacter → Texto (por ejemplo: \"hola\")\nnumeric → Números decimales (por ejemplo: 3.14)\ninteger → Números enteros (por ejemplo: 4L)\ncomplex → Números complejos (por ejemplo: 2 + 3i)\nlogical → Verdadero o falso (TRUE / FALSE)\n\n\nCuando combinamos tipos distintos, R realiza coerción automática para unificarlos bajo un mismo tipo. Por ejemplo, si concatenás un número y un texto, todo se transforma en texto:\n\n\nmi_vector &lt;- c(1, \"a\", TRUE) \nclass(mi_vector)  # character\n\n[1] \"character\""
+  },
+  {
+    "objectID": "clase_1.html#operadores-aritméticos-básicos",
+    "href": "clase_1.html#operadores-aritméticos-básicos",
+    "title": "CLASE 1",
+    "section": "Operadores aritméticos básicos",
+    "text": "Operadores aritméticos básicos\nEn R, los operadores aritméticos elementales son los habituales que usamos en matemáticas:\n\n\n\nOperador\nSignificado\nEjemplo\n\n\n\n\n+\nSuma\n2 + 3\n\n\n-\nResta\n5 - 1\n\n\n*\nMultiplicación\n4 * 2\n\n\n/\nDivisión\n10 / 2\n\n\n^\nPotencia\n2 ^ 3\n\n\n\n\n# Ejemplos básicos \n2 + 3 # Suma \n\n[1] 5\n\n5 - 1 # Resta \n\n[1] 4\n\n4 * 2 # Multiplicación \n\n[1] 8\n\n10 / 2 # División \n\n[1] 5\n\n2^3  # Potencia\n\n[1] 8"
+  },
+  {
+    "objectID": "clase_1.html#funciones-matemáticas-comunes",
+    "href": "clase_1.html#funciones-matemáticas-comunes",
+    "title": "CLASE 1",
+    "section": "Funciones matemáticas comunes",
+    "text": "Funciones matemáticas comunes\nR también incluye muchas funciones matemáticas conocidas:\n\n\n\nFunción\nSignificado\n\n\n\n\nlog(x)\nLogaritmo natural\n\n\nexp(x)\nExponencial de x\n\n\nsqrt(x)\nRaíz cuadrada\n\n\nsin(x)\nSeno\n\n\ncos(x)\nCoseno\n\n\ntan(x)\nTangente"
+  },
+  {
+    "objectID": "clase_1.html#otras-funciones-útiles-sobre-vectores",
+    "href": "clase_1.html#otras-funciones-útiles-sobre-vectores",
+    "title": "CLASE 1",
+    "section": "Otras funciones útiles sobre vectores",
+    "text": "Otras funciones útiles sobre vectores\nR también permite aplicar funciones estadísticas y agregadas sobre vectores numéricos:\n\n\n\nFunción\nDescripción\n\n\n\n\nmax(x)\nValor máximo\n\n\nmin(x)\nValor mínimo\n\n\nrange(x)\nRango (mínimo y máximo)\n\n\nlength(x)\nCantidad de elementos del vector\n\n\nsum(x)\nSuma total\n\n\nmean(x)\nPromedio\n\n\nprod(x)\nProducto acumulado"
+  },
+  {
+    "objectID": "clase_1.html#operadores-lógicos-básicos",
+    "href": "clase_1.html#operadores-lógicos-básicos",
+    "title": "CLASE 1",
+    "section": "Operadores lógicos básicos",
+    "text": "Operadores lógicos básicos\nEn R, los operadores lógicos se utilizan para comparar valores. Devuelven resultados de tipo TRUE o FALSE, que pueden utilizarse para filtrar datos, construir condiciones o ejecutar decisiones.\n\n\n\n\n\n\n\n\nOperador\nSignificado\nEjemplo\n\n\n\n\n&gt;\nMayor que\n5 &gt; 3\n\n\n&gt;=\nMayor o igual que\n5 &gt;= 5\n\n\n&lt;\nMenor que\n2 &lt; 4\n\n\n&lt;=\nMenor o igual que\n3 &lt;= 3\n\n\n==\nIgual (estricto)\n4 == 4\n\n\n!=\nDistinto de\n5 != 3\n\n\n=\nNo se recomienda para comparación, solo para asignación dentro de funciones\n\n\n\n\n\n⚠️ Importante: Para verificar si dos valores son iguales, se usa ==.\nEl signo = puede funcionar como asignación, pero no se recomienda para comparaciones lógicas.\n\n\n\nEjemplos prácticos\n\n# Comparaciones básicas\n5 &gt; 3       # TRUE\n\n[1] TRUE\n\n4 == 4      # TRUE\n\n[1] TRUE\n\n2 &lt; 1       # FALSE\n\n[1] FALSE\n\n5 != 5      # FALSE\n\n[1] FALSE\n\n# Comparar vectores\nx &lt;- c(1, 2, 3)\nx &gt; 1       # Resultado: FALSE, TRUE, TRUE\n\n[1] FALSE  TRUE  TRUE"
+  },
+  {
+    "objectID": "clase_1.html#definición-de-objetos-en-r-1",
+    "href": "clase_1.html#definición-de-objetos-en-r-1",
+    "title": "CLASE 1",
+    "section": "Definición de objetos en R",
+    "text": "Definición de objetos en R\nR es un lenguaje orientado a objetos. Casi todo lo que hacemos —desde guardar un número hasta construir modelos complejos— se basa en crear y manipular objetos.\nA continuación se presentan los principales tipos de objetos en R, todos incluidos en este mismo documento:\n\nVectores\nLos vectores son la unidad más básica de datos en R.\nContienen elementos del mismo tipo (numéricos, caracteres, lógicos, etc.).\n\nv_num &lt;- c(10, 20, 30)               # Vector numérico\nv_txt &lt;- c(\"a\", \"b\", \"c\")            # Vector de texto\nv_log &lt;- c(TRUE, FALSE, TRUE)        # Vector lógico\n\n\n\nArrays\nExtienden las matrices a más de dos dimensiones.\n\na &lt;- array(1:8, dim = c(2, 2, 2))     # Array 3D\n\n\n\nListas\nColecciones de elementos de distinto tipo o estructura.\n\n# Crear una lista\ny &lt;- list(\n  calificacion = c(\"a\", \"b\", \"c\"),\n  nota = c(10, 8, 7)\n)\n\nAcceso mediante el nombre del elemento\n\ny$calificacion        # Devuelve: \"a\" \"b\" \"c\"\n\n[1] \"a\" \"b\" \"c\"\n\ny$nota                # Devuelve: 10 8 7\n\n[1] 10  8  7\n\n\nAcceso por posición con doble corchete [[ ]]\n\ny[[1]]                # Primer elemento: \"a\" \"b\" \"c\"\n\n[1] \"a\" \"b\" \"c\"\n\ny[[2]]                # Segundo elemento: 10 8 7\n\n[1] 10  8  7\n\n\nAcceso por posición con un solo corchete [ ] devuelve una lista (no el contenido)\n\ny[2]                  # Devuelve una sublista con un solo elemento\n\n$nota\n[1] 10  8  7\n\n\nAcceso a elementos individuales dentro de componentes\n\ny[[1]][1]             # Primer valor de calificación: \"a\"\n\n[1] \"a\"\n\ny$nota[1]             # Primer valor numérico: 10\n\n[1] 10\n\n\n\n\nFactores\nRepresentan variables categóricas con niveles predefinidos\n\nniveles &lt;- factor(c(\"bajo\", \"medio\", \"alto\", \"medio\"))\n\n\n\nData Frames\nTablas con columnas que pueden tener diferentes tipos de datos.\n\ndf &lt;- data.frame(\n  nombre = c(\"Ana\", \"Luis\"),\n  edad = c(25, 30),\n  aprobado = c(TRUE, FALSE)\n)\n\n\n\nFunciones\nObjetos que encapsulan una operación. Se pueden definir funciones propias.\n\nsuma &lt;- function(x, y) {\n  return(x + y)\n}\n\nresultado &lt;- suma(3, 5)  # Resultado esperado: 8\n\n\n\nMatrices en R\nLas matrices son estructuras bidimensionales que almacenan datos del mismo tipo (numéricos, lógicos, etc.). Son fundamentales para operaciones algebraicas y manipulación de datos estructurados.\n\n# Crear una matriz 2x2\nx &lt;- matrix(c(2, 7, 3, 8), nrow = 2, ncol = 2)\nx\n\n     [,1] [,2]\n[1,]    2    3\n[2,]    7    8\n\n\n\n# Acceder a la segunda columna\nx[, 2]\n\n[1] 3 8\n\n\n\n# Acceder a un elemento específico (fila 1, columna 1)\nx[1, 1]\n\n[1] 2\n\n# Acceder a la primera fila\nx[1, ]\n\n[1] 2 3\n\n\n\n# Asignar nombres a las columnas\ncolnames(x) &lt;- c(\"col1\", \"col2\")\nx\n\n     col1 col2\n[1,]    2    3\n[2,]    7    8\n\n# Asignar nombres a las filas\nrownames(x) &lt;- c(\"row1\", \"row2\")\nx\n\n     col1 col2\nrow1    2    3\nrow2    7    8\n\n\n\n# Obtener nombres de filas\nrownames(x)\n\n[1] \"row1\" \"row2\"\n\n# Obtener nombres de columnas\ncolnames(x)\n\n[1] \"col1\" \"col2\"\n\n\n\n# Dimensiones de la matriz (filas, columnas)\ndim(x)\n\n[1] 2 2\n\n\n\n# Multiplicación elemento a elemento\nx * x\n\n     col1 col2\nrow1    4    9\nrow2   49   64\n\n# Producto matricial (por su transpuesta)\nx %*% t(x)\n\n     row1 row2\nrow1   13   38\nrow2   38  113\n\n\n\n# Añadir una columna con cbind()\nx &lt;- cbind(x, c(7, 3))\nx\n\n     col1 col2  \nrow1    2    3 7\nrow2    7    8 3\n\n# Añadir una fila con rbind()\nx &lt;- rbind(x, c(3, 7, 9))\nx\n\n     col1 col2  \nrow1    2    3 7\nrow2    7    8 3\n        3    7 9"
+  },
+  {
+    "objectID": "clase_1.html#matrices-en-r",
+    "href": "clase_1.html#matrices-en-r",
+    "title": "CLASE 1",
+    "section": "Matrices en R",
+    "text": "Matrices en R\nLas matrices son estructuras bidimensionales que almacenan datos del mismo tipo (numéricos, lógicos, etc.). Son fundamentales para operaciones algebraicas y manipulación de datos estructurados.\n\n# Crear una matriz 2x2\nx &lt;- matrix(c(2, 7, 3, 8), nrow = 2, ncol = 2)\nx\n\n     [,1] [,2]\n[1,]    2    3\n[2,]    7    8\n\n\n\n# Acceder a la segunda columna\nx[, 2]\n\n[1] 3 8\n\n\n\n# Acceder a un elemento específico (fila 1, columna 1)\nx[1, 1]\n\n[1] 2\n\n# Acceder a la primera fila\nx[1, ]\n\n[1] 2 3\n\n\n\n# Asignar nombres a las columnas\ncolnames(x) &lt;- c(\"col1\", \"col2\")\nx\n\n     col1 col2\n[1,]    2    3\n[2,]    7    8\n\n# Asignar nombres a las filas\nrownames(x) &lt;- c(\"row1\", \"row2\")\nx\n\n     col1 col2\nrow1    2    3\nrow2    7    8\n\n\n\n# Obtener nombres de filas\nrownames(x)\n\n[1] \"row1\" \"row2\"\n\n# Obtener nombres de columnas\ncolnames(x)\n\n[1] \"col1\" \"col2\"\n\n\n\n# Dimensiones de la matriz (filas, columnas)\ndim(x)\n\n[1] 2 2\n\n\n\n# Multiplicación elemento a elemento\nx * x\n\n     col1 col2\nrow1    4    9\nrow2   49   64\n\n# Producto matricial (por su transpuesta)\nx %*% t(x)\n\n     row1 row2\nrow1   13   38\nrow2   38  113\n\n\n\n# Añadir una columna con cbind()\nx &lt;- cbind(x, c(7, 3))\nx\n\n     col1 col2  \nrow1    2    3 7\nrow2    7    8 3\n\n# Añadir una fila con rbind()\nx &lt;- rbind(x, c(3, 7, 9))\nx\n\n     col1 col2  \nrow1    2    3 7\nrow2    7    8 3\n        3    7 9"
+  },
+  {
+    "objectID": "clase_1.html#cargar-y-guardar-datos-desde-diferentes-formatos",
+    "href": "clase_1.html#cargar-y-guardar-datos-desde-diferentes-formatos",
+    "title": "CLASE 1",
+    "section": "Cargar y Guardar datos desde diferentes formatos",
+    "text": "Cargar y Guardar datos desde diferentes formatos\nR permite importar bases de datos almacenadas en múltiples formatos mediante paquetes y funciones especializadas. A continuación se muestran los más comunes y los parámetros clave a tener en cuenta.\n\nFormatos y funciones principales\n\nExcel (.xlsx, .xls)**\n# cargar\nlibrary(readxl)\ndf_excel &lt;- read_excel(\"datos.xlsx\", sheet = \"Hoja1\")\n\n# guardar\nlibrary(writexl)\nwrite_xlsx(\n  df,\n  path = \"salida.xlsx\"\n)\n\n\nCSV (.csv)\n# cargar\ndf_csv &lt;- read.csv(\n  \"datos.csv\",\n  header = TRUE,    # Primera fila como nombres de columna\n  sep    = \",\",     # Delimitador de campos\n  dec    = \".\",     # Separador decimal\n  quote  = \"\\\"\"\n)\n\n# guardar\nwrite.csv(\n  df,\n  file = \"salida.csv\",\n  row.names = FALSE     # Evita guardar los nombres de fila\n)\n\n\nStata (.dta)\n# cargar\nlibrary(haven)\ndf_dta &lt;- read_dta(\"datos.dta\")"
+  },
+  {
+    "objectID": "install.html",
+    "href": "install.html",
+    "title": "Instalación",
+    "section": "",
+    "text": "Abra un navegador y vaya a www.r-project.org.\nHaga clic en download R bajo “Getting Started”.\nSeleccione un espejo CRAN y haga clic en el enlace correspondiente.\nHaga clic en Download R for (Mac) OS X.\nDescargue el archivo .pkg de la versión más reciente (por ejemplo, R 4.1.1).\nAbra el archivo .pkg y siga las instrucciones del instalador.\nUna vez instalado R, descargue RStudio desde www.rstudio.com &gt; Download Free Desktop IDE &gt; Desktop Open Source License &gt; descargue la versión .dmg para Mac y arrástrela a la carpeta de Aplicaciones.\n\n\n\n\n\nAbra un navegador y vaya a www.r-project.org.\nHaga clic en download R bajo “Getting Started”.\nSeleccione un espejo CRAN y haga clic en el enlace correspondiente.\nHaga clic en Download R for Windows.\nDescargue el instalador .exe de la versión más reciente (por ejemplo, R 4.1.1).\nAbra el archivo .exe y siga las instrucciones del instalador.\nUna vez instalado R, descargue RStudio desde www.rstudio.com &gt; Download RStudio &gt; Desktop Open Source License &gt; descargue la versión .exe para Windows y ejecútela."
+  },
+  {
+    "objectID": "install.html#instalación-de-r-y-rstudio",
+    "href": "install.html#instalación-de-r-y-rstudio",
+    "title": "Instalación",
+    "section": "",
+    "text": "Abra un navegador y vaya a www.r-project.org.\nHaga clic en download R bajo “Getting Started”.\nSeleccione un espejo CRAN y haga clic en el enlace correspondiente.\nHaga clic en Download R for (Mac) OS X.\nDescargue el archivo .pkg de la versión más reciente (por ejemplo, R 4.1.1).\nAbra el archivo .pkg y siga las instrucciones del instalador.\nUna vez instalado R, descargue RStudio desde www.rstudio.com &gt; Download Free Desktop IDE &gt; Desktop Open Source License &gt; descargue la versión .dmg para Mac y arrástrela a la carpeta de Aplicaciones.\n\n\n\n\n\nAbra un navegador y vaya a www.r-project.org.\nHaga clic en download R bajo “Getting Started”.\nSeleccione un espejo CRAN y haga clic en el enlace correspondiente.\nHaga clic en Download R for Windows.\nDescargue el instalador .exe de la versión más reciente (por ejemplo, R 4.1.1).\nAbra el archivo .exe y siga las instrucciones del instalador.\nUna vez instalado R, descargue RStudio desde www.rstudio.com &gt; Download RStudio &gt; Desktop Open Source License &gt; descargue la versión .exe para Windows y ejecútela."
+  },
+  {
+    "objectID": "ejercicios.html",
+    "href": "ejercicios.html",
+    "title": "Ejercicios",
+    "section": "",
+    "text": "Reiniciar R (Session → Restart R).\nCrear un nuevo script en su carpeta de trabajo nombrado ejercicio_1.R y realizar los siguientes procedimientos:\n\nCrear un objeto llamado var definido como el resultado de la suma: 3 + 9.\nCrear un vector vec que contenga los números 1, 3, 5.\nCrear tres vectores (vec1, vec2, vec3) que sean transformaciones del vector anterior.\nCrear tres vectores con la misma cantidad de elementos que vec, pero con variables de texto (vec4, vec5, vec6).\nCrear un data frame data como combinación de todos los vectores creados previamente.\nCrear una matriz diagonal de 2×2 que contenga 1 en la diagonal y 0 en el resto, y nombrar sus filas y columnas como sec1, sec2.\nMultiplicar la matriz diagonal por un vector columna de 1.\nExportar los resultados en formato CSV."
+  },
+  {
+    "objectID": "ejercicios.html#ejercicios-1",
+    "href": "ejercicios.html#ejercicios-1",
+    "title": "Ejercicios",
+    "section": "",
+    "text": "Reiniciar R (Session → Restart R).\nCrear un nuevo script en su carpeta de trabajo nombrado ejercicio_1.R y realizar los siguientes procedimientos:\n\nCrear un objeto llamado var definido como el resultado de la suma: 3 + 9.\nCrear un vector vec que contenga los números 1, 3, 5.\nCrear tres vectores (vec1, vec2, vec3) que sean transformaciones del vector anterior.\nCrear tres vectores con la misma cantidad de elementos que vec, pero con variables de texto (vec4, vec5, vec6).\nCrear un data frame data como combinación de todos los vectores creados previamente.\nCrear una matriz diagonal de 2×2 que contenga 1 en la diagonal y 0 en el resto, y nombrar sus filas y columnas como sec1, sec2.\nMultiplicar la matriz diagonal por un vector columna de 1.\nExportar los resultados en formato CSV."
+  }
+]
