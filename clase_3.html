@@ -186,6 +186,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#facetas-rendimiento-vs-peso-según-número-de-marchas" id="toc-facetas-rendimiento-vs-peso-según-número-de-marchas" class="nav-link" data-scroll-target="#facetas-rendimiento-vs-peso-según-número-de-marchas">5. Facetas: Rendimiento vs Peso según número de marchas</a></li>
   <li><a href="#gráfico-de-líneas-evolución-simulada-del-rendimiento" id="toc-gráfico-de-líneas-evolución-simulada-del-rendimiento" class="nav-link" data-scroll-target="#gráfico-de-líneas-evolución-simulada-del-rendimiento">6. Gráfico de líneas: Evolución simulada del rendimiento</a></li>
   </ul></li>
+  <li><a href="#introducción-a-estructuras-de-control-condicionales-y-bucles" id="toc-introducción-a-estructuras-de-control-condicionales-y-bucles" class="nav-link" data-scroll-target="#introducción-a-estructuras-de-control-condicionales-y-bucles">Introducción a estructuras de control (condicionales y bucles)</a>
+  <ul class="collapse">
+  <li><a href="#if-else" id="toc-if-else" class="nav-link" data-scroll-target="#if-else"><code>if</code> / <code>else</code></a></li>
+  <li><a href="#for" id="toc-for" class="nav-link" data-scroll-target="#for"><code>for</code></a></li>
+  <li><a href="#while" id="toc-while" class="nav-link" data-scroll-target="#while"><code>while</code></a></li>
+  <li><a href="#repeat" id="toc-repeat" class="nav-link" data-scroll-target="#repeat"><code>repeat</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -404,6 +411,75 @@ Fiat X1-9      27.3   4  66 1.935</code></pre>
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="introducción-a-estructuras-de-control-condicionales-y-bucles" class="level2">
+<h2 class="anchored" data-anchor-id="introducción-a-estructuras-de-control-condicionales-y-bucles">Introducción a estructuras de control (condicionales y bucles)</h2>
+<p>En R, es posible automatizar tareas y tomar decisiones mediante estructuras de control. Las principales son:</p>
+<section id="if-else" class="level3">
+<h3 class="anchored" data-anchor-id="if-else"><code>if</code> / <code>else</code></h3>
+<p>Permite evaluar condiciones lógicas.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (x <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"x es positivo"</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"x no es positivo"</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "x es positivo"</code></pre>
+</div>
+</div>
+</section>
+<section id="for" class="level3">
+<h3 class="anchored" data-anchor-id="for"><code>for</code></h3>
+<p>Itera sobre elementos de un vector o secuencia.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {   </span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Iteración número"</span>, i)) </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Iteración número 1"
+[1] "Iteración número 2"
+[1] "Iteración número 3"
+[1] "Iteración número 4"
+[1] "Iteración número 5"</code></pre>
+</div>
+</div>
+</section>
+<section id="while" class="level3">
+<h3 class="anchored" data-anchor-id="while"><code>while</code></h3>
+<p>Repite una acción mientras se cumpla una condición.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>contador <span class="ot">&lt;-</span> <span class="dv">1</span> </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (contador <span class="sc">&lt;=</span> <span class="dv">3</span>) {   </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(contador)   </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  contador <span class="ot">&lt;-</span> contador <span class="sc">+</span> <span class="dv">1</span> </span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1
+[1] 2
+[1] 3</code></pre>
+</div>
+</div>
+</section>
+<section id="repeat" class="level3">
+<h3 class="anchored" data-anchor-id="repeat"><code>repeat</code></h3>
+<p>Ejecuta indefinidamente hasta alcanzar una instrucción de corte (<code>break</code>).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>i <span class="ot">&lt;-</span> <span class="dv">1</span> </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="cf">repeat</span> {   </span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)   </span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">+</span> <span class="dv">1</span>   </span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (i <span class="sc">&gt;</span> <span class="dv">3</span>) <span class="cf">break</span> </span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1
+[1] 2
+[1] 3</code></pre>
+</div>
+</div>
+<p>Estas estructuras permiten realizar scripts más dinámicos, automatizar tareas y procesar datos de forma más eficiente.</p>
 
 
 </section>
