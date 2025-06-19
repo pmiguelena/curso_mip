@@ -143,6 +143,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Clase 2</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./clase_3.html"> 
+<span class="menu-text">Clase 3</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./ejercicios.html"> 
 <span class="menu-text">Ejercicios</span></a>
   </li>  
@@ -237,7 +241,7 @@ Columns: 4
 $ hs6  &lt;dbl&gt; 10121, 10121, 10121, 10121, 10121, 10121, 10121, 10121, 10121, 10…
 $ expo &lt;chr&gt; "ARG", "BRA", "CAN", "CHN", "EUN", "IND", "MEX", "PRY", "ROW", "U…
 $ impo &lt;chr&gt; "PRY", "PRY", "PRY", "PRY", "PRY", "PRY", "PRY", "PRY", "PRY", "P…
-$ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
+$ t0   &lt;int&gt; 0, 2, 3, 0, 4, 0, 0, 5, 5, 0, 4, 4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Paquete dplyr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -253,7 +257,7 @@ $ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
 <pre><code># A tibble: 1 × 4
     hs6 expo  impo     t0
   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt;
-1 10121 ARG   PRY       2</code></pre>
+1 10121 ARG   PRY       0</code></pre>
 </div>
 </div>
 <p>Renombrar columnas con rename()</p>
@@ -268,16 +272,16 @@ $ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
 <pre><code># A tibble: 10 × 4
      hs6 expo  importador    t0
    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;      &lt;int&gt;
- 1 10121 ARG   PRY            2
- 2 10121 BRA   PRY            0
- 3 10121 CAN   PRY            4
- 4 10121 CHN   PRY            4
- 5 10121 EUN   PRY            2
- 6 10121 IND   PRY            3
- 7 10121 MEX   PRY            3
- 8 10121 PRY   PRY            3
- 9 10121 ROW   PRY            2
-10 10121 USA   PRY            1</code></pre>
+ 1 10121 ARG   PRY            0
+ 2 10121 BRA   PRY            2
+ 3 10121 CAN   PRY            3
+ 4 10121 CHN   PRY            0
+ 5 10121 EUN   PRY            4
+ 6 10121 IND   PRY            0
+ 7 10121 MEX   PRY            0
+ 8 10121 PRY   PRY            5
+ 9 10121 ROW   PRY            5
+10 10121 USA   PRY            0</code></pre>
 </div>
 </div>
 <p>Crear nuevas columnas con mutate()</p>
@@ -299,16 +303,16 @@ $ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
 <pre><code># A tibble: 10 × 5
      hs6 expo  impo     t0 maximo
    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt;  &lt;int&gt;
- 1 10121 ARG   PRY       2      4
- 2 10121 BRA   PRY       0      4
- 3 10121 CAN   PRY       4      4
- 4 10121 CHN   PRY       4      4
- 5 10121 EUN   PRY       2      4
- 6 10121 IND   PRY       3      4
- 7 10121 MEX   PRY       3      4
- 8 10121 PRY   PRY       3      4
- 9 10121 ROW   PRY       2      4
-10 10121 USA   PRY       1      4</code></pre>
+ 1 10121 ARG   PRY       0      5
+ 2 10121 BRA   PRY       2      5
+ 3 10121 CAN   PRY       3      5
+ 4 10121 CHN   PRY       0      5
+ 5 10121 EUN   PRY       4      5
+ 6 10121 IND   PRY       0      5
+ 7 10121 MEX   PRY       0      5
+ 8 10121 PRY   PRY       5      5
+ 9 10121 ROW   PRY       5      5
+10 10121 USA   PRY       0      5</code></pre>
 </div>
 </div>
 <section id="resumir-datos-con-summarise" class="level3">
@@ -330,7 +334,7 @@ $ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
 <pre><code># A tibble: 1 × 4
   maximo_global minimo_global media_global suma_total
           &lt;int&gt;         &lt;int&gt;        &lt;dbl&gt;      &lt;int&gt;
-1             4             0         2.17         26</code></pre>
+1             5             0         2.25         27</code></pre>
 </div>
 </div>
 </section>
@@ -350,16 +354,16 @@ $ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
 <pre><code># A tibble: 10 × 5
      hs6 expo  impo     t0 trade
    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;dbl&gt;
- 1 10121 ARG   PRY       2   100
- 2 10121 BRA   PRY       0   200
- 3 10121 CAN   PRY       4   300
- 4 10121 CHN   PRY       4   500
- 5 10121 EUN   PRY       2   500
- 6 10121 IND   PRY       3   500
- 7 10121 MEX   PRY       3   500
- 8 10121 PRY   PRY       3   500
- 9 10121 ROW   PRY       2   500
-10 10121 USA   PRY       1   500</code></pre>
+ 1 10121 ARG   PRY       0   100
+ 2 10121 BRA   PRY       2   200
+ 3 10121 CAN   PRY       3   300
+ 4 10121 CHN   PRY       0   500
+ 5 10121 EUN   PRY       4   500
+ 6 10121 IND   PRY       0   500
+ 7 10121 MEX   PRY       0   500
+ 8 10121 PRY   PRY       5   500
+ 9 10121 ROW   PRY       5   500
+10 10121 USA   PRY       0   500</code></pre>
 </div>
 </div>
 </section>
@@ -374,16 +378,16 @@ $ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
 <pre><code># A tibble: 10 × 2
       t0 arancel_cero
    &lt;int&gt; &lt;chr&gt;       
- 1     2 No          
- 2     0 Sí          
- 3     4 No          
- 4     4 No          
- 5     2 No          
- 6     3 No          
- 7     3 No          
- 8     3 No          
- 9     2 No          
-10     1 No          </code></pre>
+ 1     0 Sí          
+ 2     2 No          
+ 3     3 No          
+ 4     0 Sí          
+ 5     4 No          
+ 6     0 Sí          
+ 7     0 Sí          
+ 8     5 No          
+ 9     5 No          
+10     0 Sí          </code></pre>
 </div>
 </div>
 </section>
@@ -463,16 +467,16 @@ $ t0   &lt;int&gt; 2, 0, 4, 4, 2, 3, 3, 3, 2, 1, 0, 2</code></pre>
 <pre><code># A tibble: 10 × 6
      hs6 expo  impo     t0 media_por_expo sobre_promedio
    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt;          &lt;dbl&gt; &lt;chr&gt;         
- 1 10121 ARG   PRY       2              2 No            
- 2 10121 BRA   PRY       0              0 No            
- 3 10121 CAN   PRY       4              4 No            
- 4 10121 CHN   PRY       4              4 No            
- 5 10121 EUN   PRY       2              2 No            
- 6 10121 IND   PRY       3              3 No            
- 7 10121 MEX   PRY       3              3 No            
- 8 10121 PRY   PRY       3              3 No            
- 9 10121 ROW   PRY       2              2 No            
-10 10121 USA   PRY       1              1 No            </code></pre>
+ 1 10121 ARG   PRY       0              0 No            
+ 2 10121 BRA   PRY       2              2 No            
+ 3 10121 CAN   PRY       3              3 No            
+ 4 10121 CHN   PRY       0              0 No            
+ 5 10121 EUN   PRY       4              4 No            
+ 6 10121 IND   PRY       0              0 No            
+ 7 10121 MEX   PRY       0              0 No            
+ 8 10121 PRY   PRY       5              5 No            
+ 9 10121 ROW   PRY       5              5 No            
+10 10121 USA   PRY       0              0 No            </code></pre>
 </div>
 </div>
 </section>
