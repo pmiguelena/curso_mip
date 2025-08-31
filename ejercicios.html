@@ -147,6 +147,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Clase 3</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./clase_4.html"> 
+<span class="menu-text">Clase 4</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./ejercicios.html" aria-current="page"> 
 <span class="menu-text">Ejercicios</span></a>
   </li>  
@@ -169,6 +173,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#ejercicios-1" id="toc-ejercicios-1" class="nav-link active" data-scroll-target="#ejercicios-1">Ejercicios # 1</a></li>
   <li><a href="#ejercicios-2" id="toc-ejercicios-2" class="nav-link" data-scroll-target="#ejercicios-2">Ejercicios # 2</a></li>
   <li><a href="#ejercicios-3" id="toc-ejercicios-3" class="nav-link" data-scroll-target="#ejercicios-3">Ejercicios # 3</a></li>
+  <li><a href="#ejercicios-4" id="toc-ejercicios-4" class="nav-link" data-scroll-target="#ejercicios-4">Ejercicios # 4 |</a></li>
+  <li><a href="#información-del-proyecto" id="toc-información-del-proyecto" class="nav-link" data-scroll-target="#información-del-proyecto">Información del Proyecto</a></li>
+  <li><a href="#datos-de-la-tabla" id="toc-datos-de-la-tabla" class="nav-link" data-scroll-target="#datos-de-la-tabla">Datos de la tabla</a></li>
+  <li><a href="#clasificación-de-gastos-del-proyecto-usd-millones" id="toc-clasificación-de-gastos-del-proyecto-usd-millones" class="nav-link" data-scroll-target="#clasificación-de-gastos-del-proyecto-usd-millones">Clasificación de Gastos del Proyecto (USD, millones)</a></li>
   </ul>
 </nav>
     </div>
@@ -267,8 +275,213 @@ Attaching package: 'dplyr'</code></pre>
 <li><p><strong>Loop while</strong>: Use un bucle <code>while</code> para sumar los primeros 5 valores de <code>hp</code> y mostrar el resultado.</p></li>
 <li><p><strong>Case_when</strong>: Cree una columna <code>eficiencia</code> que asigne “Alta” a <code>mpg &gt; 25</code>, “Media” si <code>mpg</code> entre 20 y 25, y “Baja” para <code>mpg &lt; 20</code>.</p></li>
 <li><p><strong>if_else</strong>: Añada una columna <code>bajo_peso</code> que indique “Sí” si <code>wt &lt; 3</code> y “No” en caso contrario.</p></li>
-<li><p><strong>Exportación</strong>: Guarde el dataset resultante con todas las transformaciones en <code>mtcars_ejercicios.csv</code>.</p></li>
 </ol>
+</section>
+<section id="ejercicios-4" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicios-4">Ejercicios # 4 |</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>En este ejercicio vamos a trabajar con un <strong>Proyecto de Conectividad</strong> .<br>
+El objetivo es <strong>clasificar los gastos del proyecto</strong> en <strong>componentes nacionales</strong> e <strong>importados</strong>, siguiendo categorías utilizadas en las tablas insumo-producto.</td>
+</tr>
+<tr class="even">
+<td>La consigna:<br>
+1. Revisar la información financiera.<br>
+2. Convertir los montos de dólares a precios del año base de la matriz.<br>
+3. Clasificar el gasto en <strong>materiales, trabajo, servicios y equipos</strong> según el origen (nacional o importado).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="información-del-proyecto" class="level1">
+<h1>Información del Proyecto</h1>
+<ul>
+<li><strong>Periodo de implementación</strong>: 2025–2030<br>
+</li>
+<li><strong>Costo estimado total</strong>: USD 500 millones<br>
+</li>
+<li><strong>Tipo de cambio 2019 (promedio)</strong>: ???<br>
+</li>
+<li><strong>Costo total en pesos del 2019 (aprox.)</strong>: ???</li>
+</ul>
+</section>
+<section id="datos-de-la-tabla" class="level1">
+<h1>Datos de la tabla</h1>
+</section>
+<section id="clasificación-de-gastos-del-proyecto-usd-millones" class="level1">
+<h1>Clasificación de Gastos del Proyecto (USD, millones)</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Categoria</th>
+<th>Porcentaje</th>
+<th>Nacional</th>
+<th>Importado</th>
+<th>Costo_total_USD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Routers y Switches de Red</td>
+<td>5</td>
+<td>0</td>
+<td>100</td>
+<td>25</td>
+</tr>
+<tr class="even">
+<td>Cables de Fibra Óptica y Equipos Relacionados</td>
+<td>6</td>
+<td>0</td>
+<td>100</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>Torres de Comunicación</td>
+<td>7</td>
+<td>0</td>
+<td>100</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>Servidores de Datos</td>
+<td>2</td>
+<td>0</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Equipos de Seguridad de Red (Firewalls, IDS)</td>
+<td>2</td>
+<td>0</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Unidades de Suministro de Energía (UPS)</td>
+<td>1</td>
+<td>0</td>
+<td>100</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Soluciones de Respaldo y Almacenamiento</td>
+<td>2</td>
+<td>0</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Mano de Obra Calificada</td>
+<td>8</td>
+<td>100</td>
+<td>0</td>
+<td>40</td>
+</tr>
+<tr class="odd">
+<td>Mano de Obra No Calificada</td>
+<td>35</td>
+<td>100</td>
+<td>0</td>
+<td>175</td>
+</tr>
+<tr class="even">
+<td>Gestión del Proyecto</td>
+<td>10</td>
+<td>100</td>
+<td>0</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td>Servicios de Ingeniería</td>
+<td>3</td>
+<td>100</td>
+<td>0</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>Servicios Legales y Administrativos</td>
+<td>2</td>
+<td>100</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Intereses de Préstamos Bancarios</td>
+<td>3</td>
+<td>100</td>
+<td>0</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>Costos de Inversión en Capital</td>
+<td>2</td>
+<td>100</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Primas de Seguros</td>
+<td>3</td>
+<td>100</td>
+<td>0</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>Costos Imprevistos</td>
+<td>2</td>
+<td>100</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Suministro y Distribución de Energía</td>
+<td>1</td>
+<td>100</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Servicios de Telecomunicaciones</td>
+<td>1</td>
+<td>100</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Transporte de Equipos</td>
+<td>2</td>
+<td>50</td>
+<td>50</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Construcción de Instalaciones</td>
+<td>2</td>
+<td>100</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Medidas Ambientales y de Seguridad</td>
+<td>1</td>
+<td>100</td>
+<td>0</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total del Proyecto: 500 millones USD</strong></p>
 
 
 </section>
